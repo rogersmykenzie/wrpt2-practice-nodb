@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+body {
+  background: -webkit-linear-gradient(0deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app_container {
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dog_container {
+  border: 1px solid black;
+  position: relative;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 300px;
+  padding: 10px;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-.App-link {
-  color: #61dafb;
+.dog_container h1 {
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dog_container h2 {
+  font-size: 20px;
+}
+
+.dog_image {
+  width: 200px;
+  margin: 10px 0px;
+}
+
+.dog_container h3 {
+  text-align: center;
+}
+
+.star_favorite {
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.dog_container:hover { 
+  transform: rotate(360deg); 
 }
